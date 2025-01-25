@@ -1,0 +1,2 @@
+Para rodar o projeto na fase atual, digite no terminal:
+npm run dev.
