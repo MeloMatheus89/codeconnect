@@ -1,5 +1,5 @@
 <h1 align=center> Codeconnect </h1>
-![Capa do projeto](./src/readme_assets/Captura de tela.png)
+![Capa do projeto](https://github.com/MeloMatheus89/codeconnect/blob/main/src/readme_assets/Captura%20de%20tela.png)
 Usando um template do Vite + React iniciamos o projeto Codeconnect, uma página para fazermos de portfólio com React.
 
 ## Aprendizados
