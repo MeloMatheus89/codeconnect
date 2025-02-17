@@ -1,0 +1,48 @@
+import './styles.css';
+import Close from './assets/close.png';
+import CloseBlack from './assets/close-black.svg';
+import ImagemTeste from './assets/imagem1.png';
+
+export default function MainPublicar() {
+    return (
+        <main>
+            <div className="container-upload-imagem">
+                <div className="container-imagem">
+                    <img src={ImagemTeste} alt='' className="main-imagem"/>
+                </div>
+                <button>Carregar Imagem</button>
+                <div className="container-imagem-nome">
+                    <p>Image_projeto.png</p>
+                    <img src= {Close}/>    
+                </div>
+            </div>
+            <div className='container-descricao'>
+                <h2>Novo Projeto</h2>
+                <form>
+                    <div>
+                        <label /*for="nome"*/>Nome do projeto</label>
+                        <input type="text" id="nome" name="nome" />
+                    </div>
+                    <div>
+                        <label /*for="descricao"*/>Descrição</label>
+                        <textarea id="descricao" name="descricao" ></textarea>
+                    </div>
+                    <div>
+                        <label /*for="categoria"*/>Tags</label>
+                        <input type="text" id="categoria" name="categoria" />
+                    </div>
+                    <ul className="lista-tags">
+                        <li>
+                            <p>Front-End</p>
+                            <img src={CloseBlack}/>
+                        </li>
+                    </ul>
+                    <div className='container-botoes'>
+                        <button className="botao-descartar">Descartar</button>
+                        <button className="botao-publicar">Publicar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    )
+}

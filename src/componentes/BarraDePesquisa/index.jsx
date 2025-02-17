@@ -3,7 +3,7 @@ import './styles.css'
 
 export default function BarraDePesquisa() {
     const [termoPesquisa, setTermoPesquisa] = useState('');
-    console.log(termoPesquisa)
+    console.log(termoPesquisa) // aqui você consegue ler exatamente o que está sendo digitado no input à medida que vai digitando
     return (
         <input 
         type='search' 

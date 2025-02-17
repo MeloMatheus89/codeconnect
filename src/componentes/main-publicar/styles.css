@@ -1,0 +1,86 @@
+main {
+  background-color: var(--cinza-escuro);
+  gap: 24px;
+  border-radius: 10px;
+  padding: 32px;
+  width: 80vw;
+  display: flex;
+  color: var(--branco);
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--offwhite);
+}
+
+p {
+  color: var(--branco);
+}
+
+.lista-tags {
+  list-style: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div label {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
+}
+
+form div input,
+textarea {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: var(--cinza-medio);
+  width: 100%;
+  color: var(--cinza-escuro);
+  border: none;
+  font-family: var(--font-family);
+  margin: 4px;
+  line-height: 22.5px;
+}
+
+form div input {
+  height: 39px;
+}
+
+textarea {
+  height: 161px;
+}
+
+.lista-tags {
+  display: flex;
+}
+
+.lista-tags li {
+  display: flex;
+  background-color: var(--cinza-medio);
+  color: var(--cinza-escuro);
+  gap: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.container-botoes {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+/*
+TO DO LIST: 
+ESTILIZAR OS BOTÕES DE ACORDO COM O FIGMA
+ESTILIZAR A IMAGEM DA PUBLICAÇÃO
+BOTÃO DE UPLOAD DE IMAGEM
+TEXTOS FORA DAS CORES PADRÕES
+
+ESTUDAR O PQ DOS TEXTOS ESTAREM SEM A COR PADRÃO
+
+*/
