@@ -23,15 +23,15 @@ export default function MainPublicar() {
                 <h2>Novo Projeto</h2>
                 <form>
                     <div>
-                        <label /*for="nome"*/>Nome do projeto</label>
+                        <label htmlFor="nome">Nome do projeto</label>
                         <input type="text" id="nome" name="nome" />
                     </div>
                     <div>
-                        <label /*for="descricao"*/>Descrição</label>
+                        <label htmlFor="descricao">Descrição</label>
                         <textarea id="descricao" name="descricao" ></textarea>
                     </div>
                     <div>
-                        <label /*for="categoria"*/>Tags</label>
+                        <label htmlFor="categoria">Tags</label>
                         <input type="text" id="categoria" name="categoria" />
                     </div>
                     <ul className="lista-tags">
