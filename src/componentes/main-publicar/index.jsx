@@ -3,6 +3,8 @@ import Close from './assets/close.png';
 import CloseBlack from './assets/close-black.svg';
 import ImagemTeste from './assets/imagem1.png';
 
+//TO DO: Implementar o upload da imagem.
+
 export default function MainPublicar() {
     return (
         <main>
@@ -10,7 +12,8 @@ export default function MainPublicar() {
                 <div className="container-imagem">
                     <img src={ImagemTeste} alt='' className="main-imagem"/>
                 </div>
-                <button>Carregar Imagem</button>
+                <button id="upload-btn">Carregar Imagem</button>
+                <input type="file" id="image-upload" accept="image/" style={{display: 'none'}}/>
                 <div className="container-imagem-nome">
                     <p>Image_projeto.png</p>
                     <img src= {Close}/>    

@@ -42,7 +42,7 @@ textarea {
   width: 100%;
   color: var(--cinza-escuro);
   border: none;
-  font-family: var(--font-family);
+  font-family: var(--fonte);
   margin: 4px;
   line-height: 22.5px;
 }
@@ -74,6 +74,95 @@ textarea {
   justify-content: space-between;
 }
 
+.container-botoes button {
+  width: 50%;
+  padding: 12px 32px 12px 12px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: var(--fonte);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.botao-descartar {
+  background-color: var(--cinza-escuro);
+  color: var(--verde-destaque);
+  border: 1px solid var(--verde-destaque);
+  position: relative;
+}
+
+.botao-descartar::after {
+  content: "";
+  background-image: url(assets/img/trash.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 8px;
+}
+
+.botao-publicar {
+  background-color: var(--verde-destaque);
+  color: var(--verde-petroleo);
+  border: 1px solid var(--verde-destaque);
+  position: relative;
+}
+
+.container-descricao {
+  width: 422px;
+}
+
+.main-imagem {
+  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-imagem {
+  height: 368px;
+  padding: 24px 16px;
+  background-color: var(--cinza-medio);
+  border-radius: 8px;
+}
+
+.container-upload-imagem button {
+  margin: 16px 0 8px 0;
+  background-color: var(--cinza-escuro);
+  border: 1px solid var(--cinza-medio);
+  border-radius: 8px;
+  color: var(--secondary-color);
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  font-family: var(--fonte);
+  position: relative;
+}
+
+.container-upload-imagem button::after {
+  content: "";
+  background-image: url(assets/img/upload.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 8px;
+}
+
+.container-imagem-nome {
+  display: flex;
+  gap: 8px;
+  color: var(--cinza-medio);
+  font-size: 15px;
+}
 /*
 TO DO LIST: 
 ESTILIZAR OS BOTÕES DE ACORDO COM O FIGMA
