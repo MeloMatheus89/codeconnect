@@ -6,6 +6,13 @@ import ImagemTeste from "./assets/imagem1.png";
 //TO DO: Implementar o upload da imagem.
 
 export default function MainPublicar() {
+  // const uploadBtn = document.getElementById("upload-btn");
+  // const inputUpload = document.getElementById("image-upload");
+
+  // uploadBtn.addEventListener("click", () => {
+  //   inputUpload.click();
+  // });
+
   return (
     <main>
       <div className="container-upload-imagem">
