@@ -49,6 +49,7 @@ inputUpload.addEventListener("change", async (bagulho) => {
   const arquivo = bagulho.target.files[0];
   if (arquivo) {
     try {
+      // Cria a variável conteudoDoBagulho para armazenar o conteúdo resultado da função lerConteudoDoArquivo
       const conteudoDoBagulho = await lerConteudoDoArquivo(bagulho);
       // Altero a origem da imagem e exibo nome do arquivo novo.
       imagemDeExemplo.src = conteudoDoBagulho.url;
