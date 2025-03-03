@@ -23,15 +23,19 @@ function lerConteudoDoArquivo(arquivo) {
     leitor.readAsDataURL(arquivo);
   });
 }
-
+// Adiciona variáveis para a imagem principal e o nome da imagem. Elas serão usadas para validar o upload de arquivo.
 const imagemPrincipal = document.querySelector(".main-imagem");
 const nomeDaImagem = document.querySelector(".container-imagem-nome p");
 
+//Ao mudar o arquivo, a função lerConteudoDoArquivo é chamada para ler o conteúdo do arquivo e exibir a imagem na página.
 inputUpload.addEventListener("change", async (evento) => {
+  //cria-se uma constante arquivo para armazenar o arquivo selecionado pelo usuário
   const arquivo = evento.target.files[0];
+  //Se o arquivo existir, a função lerConteudoDoArquivo é chamada para ler o conteúdo do arquivo e exibir a imagem na página.
   if (arquivo) {
     try {
       const conteudoDoArquivo = await lerConteudoDoArquivo(arquivo);
+      //Atualiza a imagem na página e exibe o nome do arquivo. Variáveis que foram chamadas anteriormente, agora foram usadas.
       imagemPrincipal.src = conteudoDoArquivo.url;
       nomeDaImagem.textContent = conteudoDoArquivo.nome;
     } catch (erro) {
