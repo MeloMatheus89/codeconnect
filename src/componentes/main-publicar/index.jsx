@@ -39,14 +39,9 @@ export default function MainPublicar() {
           </div>
           <div>
             <label htmlFor="categoria">Tags</label>
-            <input type="text" id="categoria" name="categoria" />
+            <input type="text" id="input-tags" name="categoria" />
           </div>
-          <ul className="lista-tags">
-            <li>
-              <p>Front-End</p>
-              <img src={CloseBlack} />
-            </li>
-          </ul>
+          <ul className="lista-tags" id="lista-tags"></ul>
           <div className="container-botoes">
             <button className="botao-descartar">Descartar</button>
             <button className="botao-publicar">Publicar</button>
