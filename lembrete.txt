@@ -1,2 +1,23 @@
 Para rodar o projeto na fase atual, digite no terminal:
 npm run dev.
+
+
+document.getElementById('imageInput').addEventListener('change', function(event) {
+    const file = event.target.files[0]; // Pegando o arquivo selecionado pelo usuário
+    if (file) {
+        const reader = new FileReader(); // Criando uma instância do FileReader
+        reader.onload = function(e) {
+            const preview = document.getElementById('preview');
+            preview.src = e.target.result; // Atribuindo o resultado da leitura como fonte da imagem de pré-visualização
+            preview.style.display = 'block'; // Tornando a pré-visualização visível
+        };
+        reader.readAsDataURL(file); // Lendo o arquivo como um Data URL
+    }
+});
+
+Explicação do Código
+Evento 'change': Primeiro, adicionamos um ouvinte de eventos ao nosso input de arquivo. Isso significa que sempre que um arquivo for selecionado, o código dentro da função será executado.
+FileReader: Criamos uma nova instância do FileReader. Esse objeto nos permite ler o conteúdo do arquivo selecionado.
+reader.onload: Definimos o que acontece quando a leitura do arquivo é concluída. Neste caso, queremos mostrar a imagem no elemento img que preparamos.
+readAsDataURL: Este método lê o arquivo e o codifica como um Data URL, uma string base64 que representa os dados do arquivo. Isso permite que a imagem seja mostrada diretamente no navegador sem precisar ser enviada para um servidor primeiro.
+Conclusão
